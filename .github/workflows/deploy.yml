@@ -1,0 +1,147 @@
+# Actions の All workflows の一覧に表示される名前
+name: Practice React Router & Firebase Hosting
+
+on:
+  # push:
+  #   branches:
+  #     - '**'
+  #   tags-ignore:
+  #     - 'v*.*.*'
+  workflow_dispatch:
+  # NOTE: タイムゾーンは UTC で指定することに注意する
+  # schedule:
+  #   - cron: '00 16 * * 6'
+  #   # type, required, default & options は全部書いたほうが明示的なのかもしれない（長くなるけど）
+  #   inputs:
+  #     merge_immediately:
+  #       description: PRを確認せずに即マージするかどうか
+  #       type: choice
+  #       required: true
+  #       default: 'no'
+  #       options:
+  #         - 'yes'
+  #         - 'no'
+  # NOTE: Reusable Workflows のトリガ（呼び出されるワークフローに書かれる）
+  # workflow_call:
+  #   inputs:
+  #     name:
+  #       required: true
+  #       type: string
+  #   secrets:
+  #     BUNDLE_GITHUB__COM:
+  #       required: true
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  LANG: ja_JP.UTF-8
+  # RUBY_YJIT_ENABLE: 1
+  TZ: Asia/Tokyo
+  # GH_TOKEN: ${{ secrets.YOUR_ACCESS_TOKEN }} # なんでコメントアウトしているの？
+  # 自動マージされた先で GitHub Actions を発動させるために PAT を指定する
+  # cf. https://zenn.dev/yuma_prog/articles/actions_trigger-by-githubtoken
+  # GITHUB_TOKEN: ${{ secrets.YOUR_ACCESS_TOKEN }}
+
+# $ npx @pkgdeps/update-github-actions-permissions ".github/workflows/*.{yaml,yml}"
+permissions:
+  contents: read
+
+jobs:
+  # NOTE: 他のワークフローを呼び出す場合
+  # called_job_name:
+  #   uses: ./.github/workflows/called_job_name.yml
+  #   with:
+  #     HOGE: ${{ github.ref_name }}
+  #     FUGA: ${{ var.FUGA }}
+  #   secrets:
+  #     FOO_BAR: ${{ secrets.FOO_BAR }}
+  deploy:
+    # NOTE: 順番依存がある場合に指定する
+    # needs:
+    #   - called_job_name
+    # NOTE: ワークフロー内で実行されるジョブの名前
+    # NOTE: 複数のジョブの組み合わせを前提とした場合、適切な命名が望ましいが、単体の場合はそこまで気にしなくてもいいかも
+    name: デプロイ
+    runs-on: ubuntu-24.04
+    # strategy:
+    #   matrix:
+    #     os: [ubuntu-22.04, ubuntu-24.04]
+    #     ruby: [2.7.5, 3.0.3, 3.1.0]
+    #     node: [14.18.2, 16.13.1]
+    # runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - name: （デバッグ用）Payload (GITHUB_EVENT_PATH) を確認する
+        run: |
+          cat $GITHUB_EVENT_PATH
+      - name: （デバッグ用）inputs と secrets と github と env を確認する
+        run: |
+          echo '${{ toJson(inputs) }}'
+          echo '${{ toJson(secrets) }}'
+          echo '${{ toJson(github) }}'
+          echo '${{ toJson(env) }}'
+      # TODO: PostgreSQL と MySQL を sudo apt service restart で起動する方法を書く
+      # TODO: services の例を書く (PostgreSQL, MySQL & Redis)
+      - name: $ git clone する
+        # https://github.com/actions/checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: $ git config user で github-actions[bot] ユーザを設定する
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      - name: （デバッグ用）カレントディレクトリを確認する
+        run: |
+          pwd
+          ls -la
+      # - name: secret の値をデコードしてファイルに保存する
+      #   run: |
+      #     echo "${{ secrets.FOOBAR }}" | base64 -d > /path/to/decoded_file.txt
+      - name: pnpm のセットアップを行う
+        # https://github.com/pnpm/action-setup
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        with:
+          # TODO: ここのバージョンを動的に取得したい
+          # https://github.com/pnpm/pnpm/releases
+          version: 10.11.0
+      - name: Node.js のセットアップを行う
+        # https://github.com/actions/setup-node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: '.node-version'
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - name: package.json の依存関係をインストールする ($ pnpm install)
+        run: |
+          pnpm install
+      # - name: Biome で Lint および Format をチェックする
+      #   run: |
+      #     pnpm check .
+      - name: ビルドする
+        run: |
+          pnpm build
+      # - name: tree コマンド の出力結果などを artifacts にアップロード
+      #   # https://github.com/actions/upload-artifact/releases
+      #   uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      #   with:
+      #     name: log_files
+      #     path: |
+      #       /tmp/artifacts/clone_files_tree.txt
+      #       /tmp/artifacts/global.log
+      - name: Create credentials file
+        # 秘密鍵のパスは環境変数で定義してもいいかもしれない
+        run: |
+          echo "${{ secrets.FIREBASE_CREDENTIALS }}" | base64 -d > /tmp/firebase_creds.json
+      - name: Deploy
+        env:
+          # 秘密鍵のパスは環境変数で定義してもいいかもしれない
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/firebase_creds.json
+        run: |
+          pnpm deploy:alpha
