@@ -4,6 +4,9 @@ tmp/
 .history/
 .vscode/
 
+config/*
+!config/firebase_creds.example.json
+
 # React Router
 /.react-router/
 /build/
