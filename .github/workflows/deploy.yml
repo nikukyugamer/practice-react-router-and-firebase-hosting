@@ -135,10 +135,11 @@ jobs:
       #     path: |
       #       /tmp/artifacts/clone_files_tree.txt
       #       /tmp/artifacts/global.log
-      - name: Create credentials file
+      - name: Create credentials files
         # 秘密鍵のパスは環境変数で定義してもいいかもしれない
         run: |
           echo "${{ secrets.FIREBASE_CREDENTIALS }}" | base64 -d > /tmp/firebase_creds.json
+          echo "${{ secrets.FIREBASE_RC }}" | base64 -d > ./.firebaserc
       - name: Deploy
         env:
           # 秘密鍵のパスは環境変数で定義してもいいかもしれない
