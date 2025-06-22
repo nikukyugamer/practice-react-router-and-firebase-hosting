@@ -24,6 +24,8 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
+    "deploy:alpha": "firebase deploy --only hosting:alpha",
+    "deploy:bravo": "firebase deploy --only hosting:bravo",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
