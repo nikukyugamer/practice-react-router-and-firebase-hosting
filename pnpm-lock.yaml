@@ -44,7 +44,7 @@ importers:
         version: 19.1.7(@types/react@19.1.9)
       firebase-tools:
         specifier: ^14.8.0
-        version: 14.11.1(@types/node@22.17.0)(encoding@0.1.13)
+        version: 14.11.2(@types/node@22.17.0)(encoding@0.1.13)
       tailwindcss:
         specifier: ^4.1.4
         version: 4.1.11
@@ -207,16 +207,16 @@ packages:
   '@dabh/diagnostics@2.0.3':
     resolution: {integrity: sha512-hrlQOIi7hAfzsMqlGSFyVucrx38O+j6wiGOf//H2ecvIEqYN4ADBSS2iLMh5UFyDunCNniUIPk/q3riFv45xRA==}
 
-  '@electric-sql/pglite-tools@0.2.10':
-    resolution: {integrity: sha512-iPdWvzy9j0c8R6MMZeXhwp2oZ8RjCkrXjPPew64TW97esEHCg1r5A9bHXFytRqkzLsxigkElgkBdzbZFzMvNUw==}
+  '@electric-sql/pglite-tools@0.2.11':
+    resolution: {integrity: sha512-XGuVdS0NA1Z3SpTJAtDYdCFbMDhfel2DFq9c1Em0s7vvFu/0vjEnnmN3IYb6/ddTgPNLranNvXJyaymBvhgMSg==}
     peerDependencies:
-      '@electric-sql/pglite': 0.3.5
+      '@electric-sql/pglite': 0.3.6
 
   '@electric-sql/pglite@0.2.17':
     resolution: {integrity: sha512-qEpKRT2oUaWDH6tjRxLHjdzMqRUGYDnGZlKrnL4dJ77JVMcP2Hpo3NYnOSPKdZdeec57B6QPprCUFg0picx5Pw==}
 
-  '@electric-sql/pglite@0.3.5':
-    resolution: {integrity: sha512-fhODErXJjOrnsJj5f1A8sH/Zj0INpLUbqOCiskufIUImUsFOBNHE6/FApY656Q2VSOp46wkXX3rvbBBO8O8Cag==}
+  '@electric-sql/pglite@0.3.6':
+    resolution: {integrity: sha512-KFIoLIhiOzYQzT2TOxqWH9eAMZcZd4tzSGXDY+6qRboZY2P76yFDNTKS4SB2c3hy6vRqIrHSh24VDPi9FyNhlA==}
 
   '@esbuild/aix-ppc64@0.25.8':
     resolution: {integrity: sha512-urAvrUedIqEiFR3FYSLTWQgLu5tb+m0qZw0NBEasUeo6wuqatkMDaRT+1uABiGXEu5vqgPd7FGE1BhsAIy9QVA==}
@@ -487,8 +487,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/prompts@7.7.1':
-    resolution: {integrity: sha512-XDxPrEWeWUBy8scAXzXuFY45r/q49R0g72bUzgQXZ1DY/xEFX+ESDMkTQolcb5jRBzaNJX2W8XQl6krMNDTjaA==}
+  '@inquirer/prompts@7.8.0':
+    resolution: {integrity: sha512-JHwGbQ6wjf1dxxnalDYpZwZxUEosT+6CPGD9Zh4sm9WXdtUp9XODCQD3NjSTmu+0OAyxWXNOqf0spjIymJa2Tw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@types/node': '>=18'
@@ -505,8 +505,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/search@3.0.17':
-    resolution: {integrity: sha512-CuBU4BAGFqRYors4TNCYzy9X3DpKtgIW4Boi0WNkm4Ei1hvY9acxKdBdyqzqBCEe4YxSdaQQsasJlFlUJNgojw==}
+  '@inquirer/search@3.1.0':
+    resolution: {integrity: sha512-PMk1+O/WBcYJDq2H7foV0aAZSmDdkzZB9Mw2v/DmONRJopwA/128cS9M/TXWLKKdEQKZnKwBzqu2G4x/2Nqx8Q==}
     engines: {node: '>=18'}
     peerDependencies:
       '@types/node': '>=18'
@@ -910,8 +910,8 @@ packages:
   '@types/react@19.1.9':
     resolution: {integrity: sha512-WmdoynAX8Stew/36uTSVMcLJJ1KRh6L3IZRx1PZ7qJtBqT3dYTgyDTx8H1qoRghErydW7xw9mSJ3wS//tCRpFA==}
 
-  '@types/request@2.48.12':
-    resolution: {integrity: sha512-G3sY+NpsA9jnwm0ixhAFQSJ3Q9JkpLZpJbI3GMv0mIAT0y3mRabYeINzal5WOChIiaTEGQYlHOKgkaM9EisWHw==}
+  '@types/request@2.48.13':
+    resolution: {integrity: sha512-FGJ6udDNUCjd19pp0Q3iTiDkwhYup7J8hpMW9c4k53NrccQFFWKRho6hvtPPEhnXWKvukfwAlB6DbDz4yhH5Gg==}
 
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
@@ -1661,8 +1661,8 @@ packages:
     resolution: {integrity: sha512-/t88Ty3d5JWQbWYgaOGCCYfXRwV1+be02WqYYlL6h0lEiUAMPM8o8qKGO01YIkOHzka2up08wvgYD0mDiI+q3Q==}
     engines: {node: '>= 0.8'}
 
-  firebase-tools@14.11.1:
-    resolution: {integrity: sha512-TABPdXQTGJC16Q6QizOMnNbaI31SIJHQUKQs2XH1FjCYLoC3ur88OdOFYgCy2vdGOFmDqBEmFYRzOr0sxlngEA==}
+  firebase-tools@14.11.2:
+    resolution: {integrity: sha512-SqQYKJcweZPmKi6K1B0BnKYenB79ytG0jV6JBveK4LyaQ3QWZxLMz4dFHTtksvTyHKm6z1btzwXXmTFl2/TAOg==}
     engines: {node: '>=20.0.0 || >=22.0.0'}
     hasBin: true
 
@@ -1782,8 +1782,8 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
-  google-auth-library@10.1.0:
-    resolution: {integrity: sha512-GspVjZj1RbyRWpQ9FbAXMKjFGzZwDKnUHi66JJ+tcjcu5/xYAP1pdlWotCuIkMwjfVsxxDvsGZXGLzRt72D0sQ==}
+  google-auth-library@10.2.0:
+    resolution: {integrity: sha512-gy/0hRx8+Ye0HlUm3GrfpR4lbmJQ6bJ7F44DmN7GtMxxzWSojLzx0Bhv/hj7Wlj7a2On0FcT8jrz8Y1c1nxCyg==}
     engines: {node: '>=18'}
 
   google-auth-library@9.15.1:
@@ -2475,8 +2475,8 @@ packages:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  node-gyp@11.2.0:
-    resolution: {integrity: sha512-T0S1zqskVUSxcsSTkAsLc7xCycrRYmtDHadDinzocrThjyQCn5kMlEBSj6H4qDbgsIOSLmmlRIeb0lZXj+UArA==}
+  node-gyp@11.3.0:
+    resolution: {integrity: sha512-9J0+C+2nt3WFuui/mC46z2XCZ21/cKlFDuywULmseD/LlmnOrSeEAE4c/1jw6aybXLmpZnQY3/LmOJfgyHIcng==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
@@ -3710,13 +3710,13 @@ snapshots:
       enabled: 2.0.0
       kuler: 2.0.0
 
-  '@electric-sql/pglite-tools@0.2.10(@electric-sql/pglite@0.3.5)':
+  '@electric-sql/pglite-tools@0.2.11(@electric-sql/pglite@0.3.6)':
     dependencies:
-      '@electric-sql/pglite': 0.3.5
+      '@electric-sql/pglite': 0.3.6
 
   '@electric-sql/pglite@0.2.17': {}
 
-  '@electric-sql/pglite@0.3.5': {}
+  '@electric-sql/pglite@0.3.6': {}
 
   '@esbuild/aix-ppc64@0.25.8':
     optional: true
@@ -3800,7 +3800,7 @@ snapshots:
     dependencies:
       '@googleapis/sqladmin': 31.1.0
       gaxios: 7.1.1
-      google-auth-library: 10.1.0
+      google-auth-library: 10.2.0
       p-throttle: 7.0.0
     transitivePeerDependencies:
       - supports-color
@@ -3924,7 +3924,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.17.0
 
-  '@inquirer/prompts@7.7.1(@types/node@22.17.0)':
+  '@inquirer/prompts@7.8.0(@types/node@22.17.0)':
     dependencies:
       '@inquirer/checkbox': 4.2.0(@types/node@22.17.0)
       '@inquirer/confirm': 5.1.14(@types/node@22.17.0)
@@ -3934,7 +3934,7 @@ snapshots:
       '@inquirer/number': 3.0.17(@types/node@22.17.0)
       '@inquirer/password': 4.0.17(@types/node@22.17.0)
       '@inquirer/rawlist': 4.1.5(@types/node@22.17.0)
-      '@inquirer/search': 3.0.17(@types/node@22.17.0)
+      '@inquirer/search': 3.1.0(@types/node@22.17.0)
       '@inquirer/select': 4.3.1(@types/node@22.17.0)
     optionalDependencies:
       '@types/node': 22.17.0
@@ -3947,7 +3947,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.17.0
 
-  '@inquirer/search@3.0.17(@types/node@22.17.0)':
+  '@inquirer/search@3.1.0(@types/node@22.17.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@22.17.0)
       '@inquirer/figures': 1.0.13
@@ -4343,7 +4343,7 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@types/request@2.48.12':
+  '@types/request@2.48.13':
     dependencies:
       '@types/caseless': 0.12.5
       '@types/node': 22.17.0
@@ -5203,13 +5203,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  firebase-tools@14.11.1(@types/node@22.17.0)(encoding@0.1.13):
+  firebase-tools@14.11.2(@types/node@22.17.0)(encoding@0.1.13):
     dependencies:
-      '@electric-sql/pglite': 0.3.5
-      '@electric-sql/pglite-tools': 0.2.10(@electric-sql/pglite@0.3.5)
+      '@electric-sql/pglite': 0.3.6
+      '@electric-sql/pglite-tools': 0.2.11(@electric-sql/pglite@0.3.6)
       '@google-cloud/cloud-sql-connector': 1.8.2
       '@google-cloud/pubsub': 4.11.0(encoding@0.1.13)
-      '@inquirer/prompts': 7.7.1(@types/node@22.17.0)
+      '@inquirer/prompts': 7.8.0(@types/node@22.17.0)
       '@modelcontextprotocol/sdk': 1.17.0
       abort-controller: 3.0.0
       ajv: 8.17.1
@@ -5438,7 +5438,7 @@ snapshots:
 
   globrex@0.1.2: {}
 
-  google-auth-library@10.1.0:
+  google-auth-library@10.2.0:
     dependencies:
       base64-js: 1.5.1
       ecdsa-sig-formatter: 1.0.11
@@ -5488,7 +5488,7 @@ snapshots:
     dependencies:
       extend: 3.0.2
       gaxios: 7.1.1
-      google-auth-library: 10.1.0
+      google-auth-library: 10.2.0
       qs: 6.14.0
       url-template: 2.0.8
     transitivePeerDependencies:
@@ -6107,7 +6107,7 @@ snapshots:
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
 
-  node-gyp@11.2.0:
+  node-gyp@11.3.0:
     dependencies:
       env-paths: 2.2.1
       exponential-backoff: 3.1.2
@@ -6448,7 +6448,7 @@ snapshots:
     dependencies:
       install-artifact-from-github: 1.4.0
       nan: 2.23.0
-      node-gyp: 11.2.0
+      node-gyp: 11.3.0
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -6525,7 +6525,7 @@ snapshots:
 
   retry-request@7.0.2(encoding@0.1.13):
     dependencies:
-      '@types/request': 2.48.12
+      '@types/request': 2.48.13
       extend: 3.0.2
       teeny-request: 9.0.0(encoding@0.1.13)
     transitivePeerDependencies:
