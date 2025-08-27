@@ -38,10 +38,10 @@ importers:
         version: 22.18.0
       '@types/react':
         specifier: ^19.1.2
-        version: 19.1.11
+        version: 19.1.12
       '@types/react-dom':
         specifier: ^19.1.2
-        version: 19.1.8(@types/react@19.1.11)
+        version: 19.1.8(@types/react@19.1.12)
       firebase-tools:
         specifier: ^14.8.0
         version: 14.14.0(@types/node@22.18.0)(encoding@0.1.13)
@@ -922,8 +922,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.1.11':
-    resolution: {integrity: sha512-lr3jdBw/BGj49Eps7EvqlUaoeA0xpj3pc0RoJkHpYaCHkVK7i28dKyImLQb3JVlqs3aYSXf7qYuWOW/fgZnTXQ==}
+  '@types/react@19.1.12':
+    resolution: {integrity: sha512-cMoR+FoAf/Jyq6+Df2/Z41jISvGZZ2eTlnsaJRptmZ76Caldwy1odD4xTr/gNV9VLj0AWgg/nmkevIyUfIIq5w==}
 
   '@types/request@2.48.13':
     resolution: {integrity: sha512-FGJ6udDNUCjd19pp0Q3iTiDkwhYup7J8hpMW9c4k53NrccQFFWKRho6hvtPPEhnXWKvukfwAlB6DbDz4yhH5Gg==}
@@ -4383,11 +4383,11 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react-dom@19.1.8(@types/react@19.1.11)':
+  '@types/react-dom@19.1.8(@types/react@19.1.12)':
     dependencies:
-      '@types/react': 19.1.11
+      '@types/react': 19.1.12
 
-  '@types/react@19.1.11':
+  '@types/react@19.1.12':
     dependencies:
       csstype: 3.1.3
 
