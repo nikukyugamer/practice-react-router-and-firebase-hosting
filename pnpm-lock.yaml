@@ -44,7 +44,7 @@ importers:
         version: 19.2.2(@types/react@19.2.2)
       firebase-tools:
         specifier: ^14.8.0
-        version: 14.24.0(@types/node@24.10.0)(encoding@0.1.13)(typescript@5.9.3)
+        version: 14.24.1(@types/node@24.10.0)(encoding@0.1.13)(typescript@5.9.3)
       tailwindcss:
         specifier: ^4.1.4
         version: 4.1.17
@@ -217,16 +217,16 @@ packages:
   '@dabh/diagnostics@2.0.8':
     resolution: {integrity: sha512-R4MSXTVnuMzGD7bzHdW2ZhhdPC/igELENcq5IjEverBvq5hn1SXCWcsi6eSsdWP0/Ur+SItRRjAktmdoX/8R/Q==}
 
-  '@electric-sql/pglite-tools@0.2.18':
-    resolution: {integrity: sha512-rSPRN0ZAIxuoIGfFfaI1CLnvfJnXmXL66XQ/HWc4/Wgaa4SLS3L/jJjW9TvnSdH1JIe5IrIP+clOuUWRi9Vfmg==}
+  '@electric-sql/pglite-tools@0.2.19':
+    resolution: {integrity: sha512-Ls4ZcSymnFRlEHtDyO3k9qPXLg7awfRAE3YnXk4WLsint17JBsU4UEX8le9YE8SgPkWNnQC898SqbFGGU/5JUA==}
     peerDependencies:
-      '@electric-sql/pglite': 0.3.13
+      '@electric-sql/pglite': 0.3.14
 
   '@electric-sql/pglite@0.2.17':
     resolution: {integrity: sha512-qEpKRT2oUaWDH6tjRxLHjdzMqRUGYDnGZlKrnL4dJ77JVMcP2Hpo3NYnOSPKdZdeec57B6QPprCUFg0picx5Pw==}
 
-  '@electric-sql/pglite@0.3.13':
-    resolution: {integrity: sha512-w1oy/qyUs/fUTSE93dNvOcUThsGY2BL5N9Q1WujYr9onHYJYqxwJy+hd62p9UNql41XRqbz2yDBzYAUN5IiDww==}
+  '@electric-sql/pglite@0.3.14':
+    resolution: {integrity: sha512-3DB258dhqdsArOI1fIt7cb9RpUOgcDg5hXWVgVHAeqVQ/qxtFy605QKs4gx6mFq3jWsSPqDN8TgSEsqC3OfV9Q==}
 
   '@esbuild/aix-ppc64@0.25.12':
     resolution: {integrity: sha512-Hhmwd6CInZ3dwpuGTF8fJG6yoWmsToE+vYgD4nytZVxcu1ulHpUQRAB1UJ8+N1Am3Mz4+xOByoQoSZf4D+CpkA==}
@@ -412,8 +412,8 @@ packages:
     resolution: {integrity: sha512-k4lXSFCFuZmWtYuW/OH/PcHimZP5P/uDLK0+ACbgoZFB8qmlgcyF0531aJt6JHIdBwCRlHXZlMW4LDC5Gqra5w==}
     engines: {node: '>=12.0.0'}
 
-  '@grpc/grpc-js@1.14.0':
-    resolution: {integrity: sha512-N8Jx6PaYzcTRNzirReJCtADVoq4z7+1KQ4E70jTg/koQiMoUSN1kbNjPOqpPbhMFhfU1/l7ixspPl8dNY+FoUg==}
+  '@grpc/grpc-js@1.14.1':
+    resolution: {integrity: sha512-sPxgEWtPUR3EnRJCEtbGZG2iX8LQDUls2wUS3o27jg07KqJFMq6YDeWvMo1wfpmy3rqRdS0rivpLwhqQtEyCuQ==}
     engines: {node: '>=12.10.0'}
 
   '@grpc/proto-loader@0.8.0':
@@ -594,8 +594,8 @@ packages:
   '@mjackson/node-fetch-server@0.7.0':
     resolution: {integrity: sha512-un8diyEBKU3BTVj3GzlTPA1kIjCkGdD+AMYQy31Gf9JCkfoZzwgJ79GUtHrF2BN3XPNMLpubbzPcxys+a3uZEw==}
 
-  '@modelcontextprotocol/sdk@1.21.0':
-    resolution: {integrity: sha512-YFBsXJMFCyI1zP98u7gezMFKX4lgu/XpoZJk7ufI6UlFKXLj2hAMUuRlQX/nrmIPOmhRrG6tw2OQ2ZA/ZlXYpQ==}
+  '@modelcontextprotocol/sdk@1.21.1':
+    resolution: {integrity: sha512-UyLFcJLDvUuZbGnaQqXFT32CpPpGj7VS19roLut6gkQVhb439xUzYWbsUvdI3ZPL+2hnFosuugtYWE0Mcs1rmQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
@@ -1135,8 +1135,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  bare-events@2.8.1:
-    resolution: {integrity: sha512-oxSAxTS1hRfnyit2CL5QpAOS5ixfBjj6ex3yTNvXyY/kE719jQ/IjuESJBK2w5v4wwQRAHGseVJXx9QBYOtFGQ==}
+  bare-events@2.8.2:
+    resolution: {integrity: sha512-riJjyv1/mHLIPX4RwiK+oW9/4c3TEUeORHKefKAKnZ5kyslbN+HXowtbaVEqt4IMUB7OXlfixcs6gsFeo/jhiQ==}
     peerDependencies:
       bare-abort-controller: '*'
     peerDependenciesMeta:
@@ -1778,8 +1778,8 @@ packages:
     resolution: {integrity: sha512-/t88Ty3d5JWQbWYgaOGCCYfXRwV1+be02WqYYlL6h0lEiUAMPM8o8qKGO01YIkOHzka2up08wvgYD0mDiI+q3Q==}
     engines: {node: '>= 0.8'}
 
-  firebase-tools@14.24.0:
-    resolution: {integrity: sha512-e5A1CcCwxYSvS54slT+YQR0WxczpnGVqZ83vhng2XU/Uggt8ZsC6bHFnllEIYWUIcpbP6xHZRDF469cocCFjtA==}
+  firebase-tools@14.24.1:
+    resolution: {integrity: sha512-jYiD58SEZcVuiJSB6eZSFYObiPA5XHrou7YkNYkTl1JkbKafCZgFnl3R88TD7F8p8U8naT0ES5H1mt04kaFUag==}
     engines: {node: '>=20.0.0 || >=22.0.0'}
     hasBin: true
 
@@ -3877,13 +3877,13 @@ snapshots:
       enabled: 2.0.0
       kuler: 2.0.0
 
-  '@electric-sql/pglite-tools@0.2.18(@electric-sql/pglite@0.3.13)':
+  '@electric-sql/pglite-tools@0.2.19(@electric-sql/pglite@0.3.14)':
     dependencies:
-      '@electric-sql/pglite': 0.3.13
+      '@electric-sql/pglite': 0.3.14
 
   '@electric-sql/pglite@0.2.17': {}
 
-  '@electric-sql/pglite@0.3.13': {}
+  '@electric-sql/pglite@0.3.14': {}
 
   '@esbuild/aix-ppc64@0.25.12':
     optional: true
@@ -4008,7 +4008,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@grpc/grpc-js@1.14.0':
+  '@grpc/grpc-js@1.14.1':
     dependencies:
       '@grpc/proto-loader': 0.8.0
       '@js-sdsl/ordered-map': 4.4.2
@@ -4192,7 +4192,7 @@ snapshots:
   '@mjackson/node-fetch-server@0.7.0':
     optional: true
 
-  '@modelcontextprotocol/sdk@1.21.0':
+  '@modelcontextprotocol/sdk@1.21.1':
     dependencies:
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
@@ -4710,7 +4710,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  bare-events@2.8.1: {}
+  bare-events@2.8.2: {}
 
   base64-js@1.5.1: {}
 
@@ -5260,7 +5260,7 @@ snapshots:
 
   events-universal@1.0.1:
     dependencies:
-      bare-events: 2.8.1
+      bare-events: 2.8.2
     transitivePeerDependencies:
       - bare-abort-controller
 
@@ -5436,16 +5436,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  firebase-tools@14.24.0(@types/node@24.10.0)(encoding@0.1.13)(typescript@5.9.3):
+  firebase-tools@14.24.1(@types/node@24.10.0)(encoding@0.1.13)(typescript@5.9.3):
     dependencies:
       '@apphosting/build': 0.1.7(@types/node@24.10.0)(typescript@5.9.3)
       '@apphosting/common': 0.0.8
-      '@electric-sql/pglite': 0.3.13
-      '@electric-sql/pglite-tools': 0.2.18(@electric-sql/pglite@0.3.13)
+      '@electric-sql/pglite': 0.3.14
+      '@electric-sql/pglite-tools': 0.2.19(@electric-sql/pglite@0.3.14)
       '@google-cloud/cloud-sql-connector': 1.8.4
       '@google-cloud/pubsub': 5.2.0
       '@inquirer/prompts': 7.9.0(@types/node@24.10.0)
-      '@modelcontextprotocol/sdk': 1.21.0
+      '@modelcontextprotocol/sdk': 1.21.1
       abort-controller: 3.0.0
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
@@ -5697,7 +5697,7 @@ snapshots:
 
   google-gax@5.0.5:
     dependencies:
-      '@grpc/grpc-js': 1.14.0
+      '@grpc/grpc-js': 1.14.1
       '@grpc/proto-loader': 0.8.0
       duplexify: 4.1.3
       google-auth-library: 10.5.0
