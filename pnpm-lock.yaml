@@ -16,7 +16,7 @@ importers:
         version: 8.1.0(react-router@8.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)
       isbot:
         specifier: ^5.1.27
-        version: 5.1.44
+        version: 5.2.0
       react:
         specifier: ^19.1.0
         version: 19.2.7
@@ -2037,6 +2037,10 @@ packages:
 
   isbot@5.1.44:
     resolution: {integrity: sha512-PGEHtwMnKbZpeSEXW2Utx+/JWed7dp6DiH0WWg33vGSDA7RUvpUeJSVlLrVkQ1RCpvDOUc/eH9ql7VsdbBZ8pA==}
+    engines: {node: '>=18'}
+
+  isbot@5.2.0:
+    resolution: {integrity: sha512-gbZiGCb4B5xaoxg9mS7koAyRdvJnArk10VLSHOgz6rtBG93/pi1xOFaVvXMKZ7JXgyZ8zAbNRK5uIBdIUTFSqw==}
     engines: {node: '>=18'}
 
   isexe@2.0.0:
@@ -5440,6 +5444,8 @@ snapshots:
   isarray@1.0.0: {}
 
   isbot@5.1.44: {}
+
+  isbot@5.2.0: {}
 
   isexe@2.0.0: {}
 
