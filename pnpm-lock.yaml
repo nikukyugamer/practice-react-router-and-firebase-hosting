@@ -44,7 +44,7 @@ importers:
         version: 19.2.5(@types/react@19.2.18)
       firebase-tools:
         specifier: ^15.0.0
-        version: 15.28.1(@types/node@24.13.3)(supports-color@7.2.0)
+        version: 15.28.2(@types/node@24.13.3)(supports-color@7.2.0)
       tailwindcss:
         specifier: ^4.1.4
         version: 4.3.3
@@ -1796,8 +1796,8 @@ packages:
     resolution: {integrity: sha512-S8KoZgRZN+a5rNwqTxlZZePjT/4cnm0ROV70LedRHZ0p8u9fRID0hJUZQpkKLzro8LfmC8sx23bY6tVNxv8pQA==}
     engines: {node: '>= 18.0.0'}
 
-  firebase-tools@15.28.1:
-    resolution: {integrity: sha512-5qbKmO0Am0++a335zzUe9/TFdM/dn6jGNKVp2JUcHwDrOK+5wU0LT/fGX+8rjQM8AwfzPp+eMowWX1uDGI+aQg==}
+  firebase-tools@15.28.2:
+    resolution: {integrity: sha512-oC4qfRyY+voiNGR3JHmpfZ68SSNl4QjrLS625bvflxDnvWN1PumDSGWYkfZjs1XIosceSDHM7x5cGzBMxswi5w==}
     engines: {node: '>=20.0.0 || >=22.0.0 || >=24.0.0'}
     hasBin: true
 
@@ -5194,7 +5194,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  firebase-tools@15.28.1(@types/node@24.13.3)(supports-color@7.2.0):
+  firebase-tools@15.28.2(@types/node@24.13.3)(supports-color@7.2.0):
     dependencies:
       '@apphosting/common': 0.0.8
       '@electric-sql/pglite': 0.3.16
