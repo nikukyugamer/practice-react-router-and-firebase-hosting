@@ -68,7 +68,7 @@ jobs:
     # NOTE: ワークフロー内で実行されるジョブの名前
     # NOTE: 複数のジョブの組み合わせを前提とした場合、適切な命名が望ましいが、単体の場合はそこまで気にしなくてもいいかも
     name: ビルド
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     # strategy:
     #   matrix:
     #     os: [ubuntu-22.04, ubuntu-24.04]
