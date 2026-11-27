@@ -16,7 +16,7 @@ importers:
         version: 8.5.2(react-router@8.5.2(@types/react-dom@19.3.0(@types/react@19.3.3))(@types/react@19.3.3)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(supports-color@7.2.0)(typescript@7.0.2)
       isbot:
         specifier: ^5.1.27
-        version: 5.2.3
+        version: 5.2.4
       react:
         specifier: ^19.1.0
         version: 19.3.1
@@ -2000,8 +2000,8 @@ packages:
   isarray@1.0.0:
     resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
 
-  isbot@5.2.3:
-    resolution: {integrity: sha512-e8gGz3VzAuImtTMnB5PqNRRWGAswObTc+X+X5a8PttKT78VSSFec98w9ZwUoy6jJdlvJkVdLiN+WMgA8TewoZg==}
+  isbot@5.2.4:
+    resolution: {integrity: sha512-qFPSy82nnxEUrHdKpIQPVpYwsGJqL/+VGWYVYP5c8XMOyRRPDVb1C5ZMwmKs3nB4Evsw/ux0WqHBkf2UUawC1A==}
     engines: {node: '>=18'}
 
   isexe@2.0.0:
@@ -3762,7 +3762,7 @@ snapshots:
       dedent: 1.7.2
       es-module-lexer: 2.3.1
       exit-hook: 5.1.0
-      isbot: 5.2.3
+      isbot: 5.2.4
       jsesc: 3.1.0
       lodash: 4.18.1
       p-map: 7.0.6
@@ -5221,7 +5221,7 @@ snapshots:
 
   isarray@1.0.0: {}
 
-  isbot@5.2.3: {}
+  isbot@5.2.4: {}
 
   isexe@2.0.0: {}
 
